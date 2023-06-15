@@ -9,7 +9,7 @@ yarn
 **Start Dev Server**
 
 ```
-yarn serve
+npm run serve
 ```
 
 **Build Prod Version**
