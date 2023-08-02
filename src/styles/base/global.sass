@@ -6,5 +6,253 @@ html
   scroll-behavior: smooth
   min-height: 100vh
 
+*
+  padding: 0
+  margin: 0
+  box-sizing: border-box
+
 body
   margin: 0 auto
+  width: 100vw
+  height: 100vh
+  overflow: hidden
+
+.plug
+
+  &-background
+    position: relative
+    background-image: url("../assets/img/background.png")
+    background-repeat: no-repeat
+    width: 100vw
+    height: 100vh
+    background-size: cover
+
+    +screen($tablet-xs)
+      display: none
+
+    &-mobile
+      display: none
+
+      +screen($tablet-xs)
+        display: block
+        position: relative
+        background-image: url("../assets/img/background-mobile.png")
+        background-repeat: no-repeat
+        width: 100vw
+        height: 100vh
+        background-size: cover
+
+  &-overlay
+    position: absolute
+    display: flex
+    justify-content: space-between
+    top: 0
+    height: 100vh
+    width: 100vw
+
+    +screen($tablet-xs)
+      display: none
+
+    &-mobile
+      display: none
+
+      +screen($tablet-xs)
+        position: absolute
+        display: block
+        justify-content: space-between
+        top: 0
+        height: 100vh
+        width: 100vw
+        background-image: url("../assets/img/overlay-mobile.png")
+        background-repeat: no-repeat
+        background-size: cover
+
+  &-main
+    position: absolute
+    top: 76px
+    left: 200px
+
+    +screen($desktop-sm)
+      top: 63px
+      left: 104px
+
+    +screen($tablet-xs)
+      left: 0
+      top: 0
+      width: 100%
+      height: 100%
+      padding: 42px 20px
+
+    +screen($mobile)
+      padding: 34px 30px
+
+    &-logos
+      display: flex
+      align-items: center
+      gap: 33px
+
+      +screen($desktop-sm)
+        gap: 26px
+
+      +screen($tablet-xs)
+        gap: 30px
+
+      +screen($mobile)
+        gap: 23px
+
+      &_icon
+        &:first-child
+          width: 72px
+          height: 83px
+          &:nth-child(2)
+            width: 95px
+            height: 62px
+
+        +screen($desktop-sm)
+          &:first-child
+            width: 57px
+            height: 66px
+          &:nth-child(2)
+            width: 76px
+            height: 49px
+
+        +screen($tablet-xs)
+          &:first-child
+            width: 65px
+            height: 76px
+          &:nth-child(2)
+            width: 88px
+            height: 57px
+
+        +screen($mobile)
+          &:first-child
+            width: 50px
+            height: 58px
+          &:nth-child(2)
+            width: 67px
+            height: 43px
+
+        svg
+          width: 100%
+          height: 100%
+
+    &_title
+      +font(60px, 62px, 800)
+      color: $black
+      margin: 40px 0 20px
+
+      +screen($desktop-sm)
+        +font(52px, 52px, 800)
+        margin-top: 28px
+
+      +screen($tablet-xs)
+        +font(36px, 36px, 800)
+        margin: 32px 0 16px
+
+      +screen($mobile)
+        +font(28px, 30px, 800)
+
+    &_text
+      +font(24px, 29px, 600)
+      color: $black
+      max-width: 430px
+
+      +screen($desktop-sm)
+        +font(18px, 21px, 600)
+        width: 319px
+
+      +screen($tablet-xs)
+        +font(16px, 19px, 600)
+        max-width: 100%
+        width: 100%
+
+    &-contacts
+      margin-top: 40px
+
+      +screen($desktop-sm)
+        margin-top: 24px
+
+      +screen($tablet-xs)
+        margin-top: 32px
+
+      &_title
+        color: $black
+        +font(24px, 29px, 800)
+        margin-bottom: 20px
+
+        +screen($desktop-sm)
+          +font(18px, 22px, 800)
+          margin-bottom: 12px
+
+      &-item
+        margin-bottom: 24px
+
+        +screen($desktop-sm)
+          margin-bottom: 12px
+
+        &-container
+          display: flex
+          align-items: center
+          gap: 10px
+
+          &-phones
+            align-items: flex-start
+
+          & svg
+            width: 28px
+            height: 28px
+
+        &-info
+          display: flex
+          flex-direction: column
+          gap: 4px
+
+          +screen($tablet-xs)
+            gap: 3px
+
+          &_title
+            color: $gray
+            +font(18px, 22px, 400)
+            padding-left: 40px
+            margin-bottom: 4px
+
+            +screen($desktop-sm)
+              +font(16px, 19px, 400)
+              margin-bottom: 3px
+
+          &_text
+            color: $black
+            text-decoration: none
+            +font(20px, 24px, 600)
+
+            +screen($desktop-sm)
+              +font(16px, 19px, 600)
+
+      &_name
+        color: $black
+        +font(20px, 24px, 600)
+        margin-bottom: 12px
+
+        +screen($desktop-sm)
+          +font(16px, 19px, 600)
+          margin-bottom: 8px
+
+      &_data
+        display: flex
+        flex-direction: column
+        gap: 4px
+
+        & span
+          color: $black
+          +font(18px, 22px, 400)
+
+          +screen($desktop-sm)
+            +font(14px, 17px, 400)
+
+
+
+
+
+
+
+

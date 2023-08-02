@@ -6,3 +6,64 @@ block title
   | TITLE
 
 block content
+  .plug
+    .plug-background
+    .plug-overlay
+      img(src=require('@/assets/img/overlay.png') alt="")
+      img(src=require('@/assets/img/overlay-elements.png') alt="")
+    .plug-background-mobile
+    .plug-overlay-mobile
+    .plug-main
+      .plug-main-logos
+        .plug-main-logos_icon
+          | !{require('!svg-inline-loader?removeSVGTagAttrs=false!@/assets/img/sotrans-logo.svg')}
+        .plug-main-logos_icon
+          | !{require('!svg-inline-loader?removeSVGTagAttrs=false!@/assets/img/dongfeng-logo.svg')}
+      h1.plug-main_title
+        | Сайт находится
+        br
+        |  на реконструкции
+      h5.plug-main_text
+        | SOTRANS ВОСТОК —
+        br
+        | официальный дилер DONGFENG в Российской Федерации
+      .plug-main-contacts
+        h6.plug-main-contacts_title Контакты:
+        .plug-main-contacts-item
+          .plug-main-contacts-item-container
+            | !{require('!svg-inline-loader?removeSVGTagAttrs=false!@/assets/img/location.svg')}
+            span.plug-main-contacts-item-info_text г. Владивосток
+        .plug-main-contacts-item
+          span.plug-main-contacts-item-info_title Режим работы
+          .plug-main-contacts-item-container
+            | !{require('!svg-inline-loader?removeSVGTagAttrs=false!@/assets/img/time.svg')}
+            span.plug-main-contacts-item-info_text Пн.-Пт.: 9:00 - 18:00
+        .plug-main-contacts-item
+          span.plug-main-contacts-item-info_title Отдел продаж
+          .plug-main-contacts-item-container.plug-main-contacts-item-container-phones
+            | !{require('!svg-inline-loader?removeSVGTagAttrs=false!@/assets/img/phone.svg')}
+            .plug-main-contacts-item-info
+              a(href="tel:+78124480625").plug-main-contacts-item-info_text + 7 (812) 448 - 06 -25
+              a(href="tel:+ 79213126277").plug-main-contacts-item-info_text + 7 (921) 312 - 62 -77
+        .plug-main-contacts-item
+          .plug-main-contacts-item-container
+            | !{require('!svg-inline-loader?removeSVGTagAttrs=false!@/assets/img/mail.svg')}
+            a(href="mailto:r.romanov@tc-sotrans.ru").plug-main-contacts-item-info_text r.romanov@tc-sotrans.ru
+        p.plug-main-contacts_name ООО «СОТРАНС ВОСТОК»
+        .plug-main-contacts_data
+          span ИНН 2540271369
+          span КПП 254001001
+
+
+
+
+
+
+
+
+
+
+
+
+
+
