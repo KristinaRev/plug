@@ -76,6 +76,9 @@ body
       top: 63px
       left: 104px
 
+    +screen($tablet-sm)
+      padding-right: 30px
+
     +screen($tablet-xs)
       left: 0
       top: 0
@@ -159,7 +162,7 @@ body
 
       +screen($desktop-sm)
         +font(18px, 21px, 600)
-        width: 319px
+        max-width: 338px
 
       +screen($tablet-xs)
         +font(16px, 19px, 600)
@@ -198,9 +201,16 @@ body
           &-phones
             align-items: flex-start
 
-          & svg
-            width: 28px
-            height: 28px
+          &_svg
+            width: 28px !important
+            height: 28px !important
+            background-color: #ED1C24
+            box-shadow: 0 2px 7px 0 rgba(237, 28, 36, 0.5)
+            display: flex
+            align-items: center
+            justify-content: center
+
+
 
         &-info
           display: flex

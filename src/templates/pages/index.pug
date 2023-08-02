@@ -31,23 +31,27 @@ block content
         h6.plug-main-contacts_title Контакты:
         .plug-main-contacts-item
           .plug-main-contacts-item-container
-            | !{require('!svg-inline-loader?removeSVGTagAttrs=false!@/assets/img/location.svg')}
+            .plug-main-contacts-item-container_svg
+              | !{require('!svg-inline-loader?removeSVGTagAttrs=false!@/assets/img/location.svg')}
             span.plug-main-contacts-item-info_text г. Владивосток
         .plug-main-contacts-item
           span.plug-main-contacts-item-info_title Режим работы
           .plug-main-contacts-item-container
-            | !{require('!svg-inline-loader?removeSVGTagAttrs=false!@/assets/img/time.svg')}
+            .plug-main-contacts-item-container_svg
+              | !{require('!svg-inline-loader?removeSVGTagAttrs=false!@/assets/img/time.svg')}
             span.plug-main-contacts-item-info_text Пн.-Пт.: 9:00 - 18:00
         .plug-main-contacts-item
           span.plug-main-contacts-item-info_title Отдел продаж
           .plug-main-contacts-item-container.plug-main-contacts-item-container-phones
-            | !{require('!svg-inline-loader?removeSVGTagAttrs=false!@/assets/img/phone.svg')}
+            .plug-main-contacts-item-container_svg
+              | !{require('!svg-inline-loader?removeSVGTagAttrs=false!@/assets/img/phone.svg')}
             .plug-main-contacts-item-info
               a(href="tel:+78124480625").plug-main-contacts-item-info_text + 7 (812) 448 - 06 -25
               a(href="tel:+ 79213126277").plug-main-contacts-item-info_text + 7 (921) 312 - 62 -77
         .plug-main-contacts-item
           .plug-main-contacts-item-container
-            | !{require('!svg-inline-loader?removeSVGTagAttrs=false!@/assets/img/mail.svg')}
+            .plug-main-contacts-item-container_svg
+              | !{require('!svg-inline-loader?removeSVGTagAttrs=false!@/assets/img/mail.svg')}
             a(href="mailto:r.romanov@tc-sotrans.ru").plug-main-contacts-item-info_text r.romanov@tc-sotrans.ru
         p.plug-main-contacts_name ООО «СОТРАНС ВОСТОК»
         .plug-main-contacts_data
